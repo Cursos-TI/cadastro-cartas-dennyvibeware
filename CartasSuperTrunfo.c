@@ -6,12 +6,12 @@
 
 int main() {
   // Área para definição das variáveis para armazenar as propriedades das cidades
-  char estado, estado2 ="";
-  /* a variavel precisa ter tamanho 4 
-   - 3 digitos do codigo da carta, exemplo A01 
-   - mais 1 digito para o enter que seria o \n
-     se o tamanho do codigo da carta for 3, apos digitar o codigo A01 e dar um enter 
-     vai causar um estouro de buffer na memória (buffer overflow)A
+  char estado, estado2 = "";
+  /* a variavel codigo_da_carta precisa ter tamanho 4 
+   - 3 digitos do codigo da carta + \0 
+   - O \0 é o caractere nulo (null terminator) usado pela linguagem C para indicar o fim de uma string
+   - se o tamanho do codigo_da_carta for 3, apos digitar o codigo A01 e dar um enter 
+     ira causar um estouro de buffer na memória (buffer overflow)
   */
   char codigo_da_carta[4], codigo_da_carta2[4]=""; 
   char cidade[30], cidade2[30]="";
