@@ -6,7 +6,7 @@
 
 int main() {
   // Área para definição das variáveis para armazenar as propriedades das cidades
-  char estado, estado2 = "";
+  char estado, estado2;
   /* a variavel codigo_da_carta precisa ter tamanho 4 
    - 3 digitos do codigo da carta + \0 
    - O \0 é o caractere nulo (null terminator) usado pela linguagem C para indicar o fim de uma string
